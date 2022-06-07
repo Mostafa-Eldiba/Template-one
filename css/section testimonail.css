@@ -1,0 +1,48 @@
+/* testimonail section */
+ .testimonail{
+    position: relative;
+     background-image: url(../images/background/background3.webp);
+     background-attachment: fixed;
+     height: 400px;
+ }
+
+ .testimonail-content{
+    overflow: hidden;
+    padding: 120px 0;
+    width: 97%;
+    margin: auto;
+ }
+
+ .testimonail-item{
+    width: 50%;
+    float: left;
+    color: #fff; 
+ }
+
+ .testimonail-toplayer{
+    padding: 10px 2px 40px 100px;
+    position: relative;
+ }
+
+.testimonail-toplayer img{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.testimonail-toplayer h3{
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.testimonail-toplayer span{
+    color: #6195ff;
+    text-transform: capitalize;
+}
+
+.testimonail-desc{
+    line-height: 1.5;
+    font-size: 17px;
+    text-transform: capitalize;
+}

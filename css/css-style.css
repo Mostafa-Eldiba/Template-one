@@ -1,0 +1,158 @@
+/* 
+    *catalogue
+    1/ common styles
+    2/ general css styles
+    3/ sections
+        a/ header section
+        b/ home section
+        c/ about section
+        d/ portfolio section
+        e/ services section
+        f/ prices section
+        g/ team section
+        h/ blog page
+        i/ contact section
+        j/ footer section          
+*/
+
+/* common */
+/* 
+    - container
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 (left to right)
+    - hover effect 2 (top to bottom)
+*/
+
+
+/* 1- common */
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hover-opacity{
+    transition: opacity 0.5s;
+}
+
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+.ltr-effect,
+.tb-effect{
+    position: relative;
+}
+
+.ltr-effect::after,
+.tb-effect::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+.ltr-effect::after{
+    width: 0;
+    transition: width 0.5s;
+}
+
+.tb-effect::after{
+    height: 0;
+    transition: height 0.5s;
+}
+
+
+.ltr-effect:hover:after{
+    width: 100%;
+}
+
+.tb-effect:hover:after{
+    height: 100%;
+}
+
+/* 2- general css styles */
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+body{
+    font-family: montserrat, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.h1, h2, h3, h4, h5, h6{
+    font-family: montserrat, sans-serif;
+}
+
+button{
+    font-family: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pd-y{
+    padding: 120px 0;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-header .line{
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color: #6195ff;
+}

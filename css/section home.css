@@ -1,0 +1,50 @@
+/* home section */
+.home{
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home-content{
+    width: 65%;
+    position: absolute;
+    left:  50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home-title{
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.home-desc{
+    margin: 20px 0;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.btn{
+    min-width: 160px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.btn-started{
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.btn-more{
+    background-color: #6195ff;
+    color: #fff;
+}
